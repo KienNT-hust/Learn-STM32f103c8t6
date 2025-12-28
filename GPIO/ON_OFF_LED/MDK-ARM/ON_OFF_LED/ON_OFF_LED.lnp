@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+"on_off_led\startup_stm32f103xb.o"
+"on_off_led\main.o"
+"on_off_led\stm32f1xx_it.o"
+"on_off_led\stm32f1xx_hal_msp.o"
+"on_off_led\stm32f1xx_hal_gpio_ex.o"
+"on_off_led\stm32f1xx_hal.o"
+"on_off_led\stm32f1xx_hal_rcc.o"
+"on_off_led\stm32f1xx_hal_rcc_ex.o"
+"on_off_led\stm32f1xx_hal_gpio.o"
+"on_off_led\stm32f1xx_hal_dma.o"
+"on_off_led\stm32f1xx_hal_cortex.o"
+"on_off_led\stm32f1xx_hal_pwr.o"
+"on_off_led\stm32f1xx_hal_flash.o"
+"on_off_led\stm32f1xx_hal_flash_ex.o"
+"on_off_led\stm32f1xx_hal_exti.o"
+"on_off_led\system_stm32f1xx.o"
+--strict --scatter "ON_OFF_LED\ON_OFF_LED.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ON_OFF_LED.map" -o ON_OFF_LED\ON_OFF_LED.axf
